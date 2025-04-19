@@ -1,6 +1,11 @@
 .main {
   display: grid;
   grid-template-areas:
-    "headline headline headline"
+    "headline1 headline2 headline3"
+    "sidebar main main"
     "sidebar main main";
+}
+
+.introduce {
+  grid-area: "headline2";
 }
