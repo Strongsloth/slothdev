@@ -1,11 +1,36 @@
-.main {
+.grid-container {
   display: grid;
   grid-template-areas:
-    "headline1 headline2 headline3"
+    "sidebar headline headline"
     "sidebar main main"
     "sidebar main main";
+  grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+  align-content: space-evenly;
+  align-items: start;
+  justify-items: center;
 }
 
-.introduce {
-  grid-area: "headline2";
+.intro {
+  grid-area: headline;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.intro
+.status{
+  color: #353535;
+
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+ 
+}
+
+.sidebar p {
+  font-size: 20px;
+  font-weight: bold;
 }
